@@ -34,10 +34,10 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-- name: Public IP
-  # You may pin to the exact commit or the version.
-  # uses: haythem/public-ip@80817b0f5a25abd023258727319a82edcce9bb83
-  uses: haythem/public-ip@v1.2
-  with:
-    # How many retries on the ipify apis before failing
-    maxRetries: # optional, default is 5
+      - name: Public IP
+        # You may pin to the exact commit or the version.
+        # uses: haythem/public-ip@80817b0f5a25abd023258727319a82edcce9bb83
+        uses: haythem/public-ip@v1.2
+        with:
+          # How many retries on the ipify apis before failing
+          maxRetries: 5
